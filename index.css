@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic');
+
+body,
+html {
+	font-family: "Comfortaa", cursive;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.profile-header {
+	background-color: rgba(104, 104, 104, .4);
+	width: 70%;
+	height: 10%;
+	padding-right: 30px
+}
+.profile-header .profile-header-title {
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-size: 32px;
+}	
+.profile-header .profile-header-title p {
+	margin: 0;
+	padding: 0;
+}
+.profile-header .profile-header-address {
+	font-size: 18px;
+	color: #026C61;
+	width: 100%;
+	height: 100%;
+}
+.profile-header .profile-header-address .arrow {
+	width: 32px;
+	height: 32px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.profile-header .profile-header-address label {
+	width: 25%;
+	font-size: 22px;
+	margin: 0;
+	font-weight: bold;
+}
+.profile-header .profile-header-address input {
+	background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Comfortaa', cursive;
+}
+
+

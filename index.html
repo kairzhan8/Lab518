@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidebar_settings</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<sidebar-settings>
+	</sidebar-settings>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+	<script> 
+		angular
+			.module("myApp", [])
+			.controller("myCtrl",function($scope) {
+			})
+	</script>
+	<script src="Sidebar_settings_controller.js"></script>
+	<script src="Sidebar_settings_directive.js"></script>
+</body>
+</html>

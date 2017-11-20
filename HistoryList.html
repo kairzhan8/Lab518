@@ -1,0 +1,41 @@
+<div class="history-list-container d-flex align-items-center flex-column">
+	<div class="history-list-filter d-flex justify-content-end align-items-center">
+		<div class="dropdown">
+		  <div class="history-list-button d-flex align-items-center justify-content-end" data-toggle="dropdown">
+		    {{ctrl.defaultState}}
+		  </div>
+		  <div class="dropdown-menu">
+		    <p ng-repeat="item in ctrl.filterStates" ng-click="ctrl.filter(item)">{{item.text}}</p>
+		  </div>
+		</div>
+	</div>
+	<div class="history-list-wrap">
+		<div class="history-list d-flex justify-content-end" ng-repeat="item in ctrl.result">
+			<div class="history-list-leftside"></div>
+			<div class="history-list-rightside d-flex justify-content-end align-items-end">
+				<div class="history-list-circle d-flex justify-content-end align-items-center flex-column">
+					<h5>{{item.date}}</h5>
+					<p>{{item.time}}</p>
+				</div>
+				<div class="history-list-content">
+					<div class="history-list-title d-flex align-items-center">
+						<div class="history-list-arrow arrow-back"></div>
+						<div class="history-list-title-name d-flex align-items-center justify-content-around">
+							<img src="icons/32/yellow/manicure.png">
+							<h4>{{item.type}}</h4>
+						</div>
+						<div class="history-list-arrow arrow-next"></div>
+					</div>
+					<div class="history-list-carousel d-flex justify-content-center align-items-center">
+						<div class="row subtitles d-flex align-items-center justify-content-center">
+							<div class="history-list-left col-md-6 d-flex justify-content-center align-items-center">{{item.subtype1}}</div>
+							<div class="history-list-right col-md-6 d-flex justify-content-center align-items-center">{{item.subtype2}}</div>
+							<div class="history-list-price d-flex align-items-center justify-content-center"><p class="price">{{item.price}}</p><p class="price-currency">тенге</p></div>
+						</div>
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

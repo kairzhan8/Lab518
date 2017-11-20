@@ -1,0 +1,16 @@
+<div class="sidebar-settings">
+	<div class="sidebar-settings-container" ng-class="{'vis-hidden':logout, 'vis-hidden':changeuser}">
+		<div class="sidebar-settings-container-question d-flex justify-content-center align-items-end">
+			<p ng-if="ctrl.state == 1">Вы действительно<br> хотите выйти?</p>
+			<p ng-if="ctrl.state == 2">Сменить пользователя?</p>
+		</div>
+		<div class="sidebar-settings-container-buttons d-flex justify-content-center align-items-start">
+			<img ng-if="ctrl.showButtons" src="icons/agree_button.png"  ng-click="ctrl.agree()">
+			<img ng-if="ctrl.showButtons" src="icons/dissmiss_button.png" ng-click="ctrl.dissmiss()">
+		</div>
+	</div>
+	<div class="sidebar-settings-footer d-flex align-items-center justify-content-around flex-column">
+			<div class="sidebar-settings-footer-buttons top-button d-flex align-items-center justify-content-center" ng-click="ctrl.changeState(1)">Выйти</div>
+			<div class="sidebar-settings-footer-buttons bottom-button d-flex align-items-center justify-content-center" ng-click="ctrl.changeState(2)">Сменить пользователя</div>
+	</div>
+</div>
